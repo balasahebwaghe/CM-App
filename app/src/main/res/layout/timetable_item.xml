@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <!-- Empty space for time column -->
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center|start"
+            android:paddingStart="10dp"
+            android:text="Time" />
+
+        <!-- Monday to Saturday titles -->
+        <TextView
+            android:id="@+id/mondayTextView"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Monday"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tuesdayTextView"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Tuesday"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/wednesdayTextView"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Wednesday"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/thursdayTextView"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Thursday"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/fridayTextView"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Friday"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/saturdayTextView"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Saturday"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.AdminProfileFrag">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/circle_background"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_person_24" />
+    <TextView
+        android:layout_below="@id/image"
+        android:id="@+id/TV_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Principle Name :"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/ET_PName"
+        android:layout_below="@id/TV_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Principle Name"
+        android:layout_marginStart="20dp"
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        />
+    <TextView
+        android:id="@+id/tv_Username"
+        android:layout_below="@id/ET_PName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName :"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/ET_Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="UserName"
+        android:layout_marginStart="20dp"
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        />
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_below="@id/ET_Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName :"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/ET_password"
+        android:layout_below="@id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginStart="20dp"
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        />
+    <LinearLayout
+        android:layout_below="@id/ET_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HODProfileFrag">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/circle_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_person_24" />
+        <TextView
+            android:layout_below="@id/image"
+            android:id="@+id/TV_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOD Name :"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            />
+    <TextView
+        android:id="@+id/ET_hodName"
+        android:layout_below="@id/TV_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="HOD Name"
+        android:layout_marginStart="20dp"
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        />
+    <TextView
+        android:id="@+id/tv_hod_department"
+        android:layout_below="@id/ET_hodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOD Department :"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/ET_hod_department"
+        android:layout_below="@id/tv_hod_department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="HOD Department"
+        android:layout_marginStart="20dp"
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        />
+    <TextView
+        android:id="@+id/tv_hod_year"
+        android:layout_below="@id/ET_hod_department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOD Year :"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/ET_hod_year"
+        android:layout_below="@id/tv_hod_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="HOD Year"
+        android:layout_marginStart="20dp"
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        />
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_below="@id/ET_hod_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UserName :"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/ET_username"
+        android:layout_below="@id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="UserName"
+        android:layout_marginStart="20dp"
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        />
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_below="@+id/ET_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password :"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/ET_password"
+        android:layout_below="@id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginStart="20dp"
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        />
+<LinearLayout
+    android:layout_below="@id/ET_password"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_weight="1"
+        />
+    <Button
+        android:id="@+id/btn_change_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change password"
+        android:layout_weight="1"
+        />
+</LinearLayout>
+
+</RelativeLayout>

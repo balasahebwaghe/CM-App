@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/home"
+            android:title="Home "
+            />
+        <item
+            android:id="@+id/nav_Profile"
+            android:icon="@drawable/profile"
+            android:title="Profile"
+            />
+        <item
+            android:id="@+id/nav_viewNotes"
+            android:icon="@drawable/viewnotes"
+            android:title="View Notes"
+            />
+        <item
+            android:id="@+id/nav_viewPost"
+            android:icon="@drawable/viewpost"
+            android:title="View Post"
+            />
+        <item
+            android:id="@+id/nav_timeTable"
+            android:icon="@drawable/timetable"
+            android:title="View Timetable "
+            />
+        <item
+            android:id="@+id/nav_addComplaint"
+            android:icon="@drawable/complaint"
+            android:title="Add Complaint"
+            />
+    </group>
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:title="">
+            <menu>
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout"
+                    android:title="Logout"
+                    />
+            </menu>
+        </item>
+    </group>
+</menu>

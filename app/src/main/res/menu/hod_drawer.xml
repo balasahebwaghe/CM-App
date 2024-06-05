@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/baseline_person_24"
+            android:title="Profile"
+            />
+        <item
+            android:id="@+id/nav_facultyDetails"
+            android:icon="@drawable/baseline_supervisor_account_24"
+            android:title="Faculty Details"
+            />
+        <item
+            android:id="@+id/nav_stdDetails"
+            android:icon="@drawable/info"
+            android:title="Student Details "
+            />
+        <item
+            android:id="@+id/nav_post"
+            android:icon="@drawable/baseline_post_add_24"
+            android:title="Post"
+            />
+        <item
+            android:id="@+id/nav_teacherLeave"
+            android:icon="@drawable/leave"
+            android:title="Accept Teacher Leave"
+            />
+        <item
+            android:id="@+id/nav_stdComplaint"
+            android:icon="@drawable/info"
+            android:title="View Std Complaint"
+            />
+        <item
+            android:id="@+id/nav_principlePost"
+            android:icon="@drawable/baseline_local_post_office_24"
+            android:title="View Principle Post"
+            />
+        <item
+            android:id="@+id/nav_teacherRegister"
+            android:icon="@drawable/baseline_person_add_alt_24"
+            android:title="Teacher Registration"
+            />
+        <item
+            android:id="@+id/nav_stdRegister"
+            android:icon="@drawable/baseline_person_add_alt_24"
+            android:title="Student Registration"
+            />
+        <item
+            android:id="@+id/nav_generatetimetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/baseline_calendar_month_24"
+            android:title="Generate Timetable" />
+
+    </group>
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:title="">
+            <menu>
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout"
+                    android:title="Logout"
+                    />
+            </menu>
+        </item>
+    </group>
+</menu>

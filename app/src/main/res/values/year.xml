@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="year">
+        <item>Select Year</item>
+        <item>I year</item>
+        <item>II year</item>
+        <item>III year</item>
+    </string-array>
+</resources>

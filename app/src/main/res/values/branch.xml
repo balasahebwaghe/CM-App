@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="branch">
+        <item>Select Course</item>
+        <item>Computer</item>
+    </string-array>
+</resources>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditStdProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:scrollbarStyle="insideOverlay">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:background="@color/white">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/imageCard2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="30dp"
+                    app:cardCornerRadius="60dp">
+                    <ImageView
+                        android:id="@+id/imageCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/addimage"
+                    android:layout_below="@+id/imageCard2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="50dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="-45dp"
+                    android:layout_marginStart="160dp">
+                    <Button
+                        android:id="@+id/upload"
+                        android:text="Upload Image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:onClick="onUploadButtonClick"
+                        android:background="@drawable/addphoto"
+                        android:drawableTint="@color/black"/>
+
+                </androidx.cardview.widget.CardView>
+                <!-- Title for RollNo -->
+                <TextView
+                    android:id="@+id/rollno_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addimage"
+                    android:text="Roll No:"
+                    android:layout_marginTop="15dp"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/rollno"
+                    android:layout_below="@id/rollno_title"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Enter Roll No"
+                    android:background="@color/cardline"
+                    android:gravity="center_horizontal"/>
+
+                <!-- Similarly add titles for other EditText fields -->
+
+                <!-- Title for Name -->
+                <TextView
+                    android:id="@+id/name_title"
+                    android:layout_below="@id/rollno"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name:"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_below="@id/name_title"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Enter Name"
+                    android:background="@color/cardline"
+                    android:gravity="center_horizontal"/>
+
+                <!-- Title for Mobile -->
+                <TextView
+                    android:id="@+id/mobile_title"
+                    android:layout_below="@id/name"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile:"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/mobile"
+                    android:layout_below="@id/mobile_title"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Enter Mobile"
+                    android:background="@color/cardline"
+                    android:gravity="center_horizontal"/>
+
+                <!-- Similarly add titles for other EditText fields -->
+
+                <!-- Title for Branch -->
+                <TextView
+                    android:id="@+id/branch_title"
+                    android:layout_below="@id/mobile"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Branch:"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/branch"
+                    android:layout_below="@id/branch_title"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Enter Branch"
+                    android:background="@color/cardline"
+                    android:gravity="center_horizontal"/>
+
+                <!-- Title for Year -->
+                <TextView
+                    android:id="@+id/year_title"
+                    android:layout_below="@id/branch"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Year:"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/year"
+                    android:layout_below="@id/year_title"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Enter Year"
+                    android:background="@color/cardline"
+                    android:gravity="center_horizontal"/>
+
+                <!-- Button to save -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/save"
+                    android:layout_marginTop="40dp"
+                    android:layout_below="@id/year"
+                    android:layout_width="120dp"
+                    android:layout_marginStart="90dp"
+                    android:layout_height="35dp"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    app:cardCornerRadius="20dp"
+                    android:background="@color/Purple"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/Purple"
+                        android:textColorHint="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="20dp"
+                        android:padding="5dp"
+                        android:gravity="center_horizontal"
+                        android:hint="Save"/>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</FrameLayout>

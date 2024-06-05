@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sem">
+        <item>Select sem</item>
+        <item>sem 1</item>
+        <item>sem 2</item>
+        <item>sem 3</item>
+        <item>sem 4</item>
+        <item>sem 5</item>
+        <item>sem 6</item>
+    </string-array>
+</resources>

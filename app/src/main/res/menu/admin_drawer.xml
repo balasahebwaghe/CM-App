@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <!--<item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/home"
+            android:title="Home "
+            />-->
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/courseicon"
+            android:title="Profile"
+            />
+        <item
+            android:id="@+id/nav_hodDetails"
+            android:icon="@drawable/info"
+            android:title="HOD Details"
+            />
+        <item
+            android:id="@+id/nav_hodRegistration"
+            android:icon="@drawable/baseline_person_add_alt_24"
+            android:title="HOD Registration"
+            />
+        <item
+            android:id="@+id/nav_post"
+            android:icon="@drawable/baseline_post_add_24"
+            android:title="Post"
+            />
+        <!--<item
+            android:id="@+id/nav_teacherReg"
+            android:icon="@drawable/baseline_person_add_alt_24"
+            android:title="Teacher Registration"
+            />
+        <item
+            android:id="@+id/nav_teachersubject"
+            android:icon="@drawable/sub"
+            android:title="Assign Subject to Teacher"
+            />
+        <item
+            android:id="@+id/nav_allteacherinfo"
+            android:icon="@drawable/info"
+            android:title="Teacher and Subject Info"
+            />
+        <item
+            android:id="@+id/amenu_genratetimetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/baseline_calendar_month_24"
+            android:title="Genrate Timetable" />-->
+    </group>
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:title="">
+            <menu>
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout"
+                    android:title="Logout"
+                    />
+            </menu>
+        </item>
+    </group>
+</menu>
